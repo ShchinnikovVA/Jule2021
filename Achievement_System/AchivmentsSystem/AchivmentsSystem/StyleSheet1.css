@@ -1,0 +1,21 @@
+﻿body {
+
+}
+.title {
+    text-align: center;
+}
+.container {
+    height: 400px;
+    margin: 10px;
+
+}
+.cont_elem {
+    float: left;
+    width: 45%;
+    margin: 5px;
+    height: 100px;
+}
+#ce2 {
+    float: right;
+    /*height: 50px;*/
+}

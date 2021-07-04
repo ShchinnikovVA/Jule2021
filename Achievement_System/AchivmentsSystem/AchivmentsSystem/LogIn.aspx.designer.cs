@@ -105,13 +105,13 @@ namespace AchivmentsSystem
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
 
         /// <summary>
-        /// Label4 элемент управления.
+        /// RequiredFieldValidator3 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
 
         /// <summary>
         /// TextBox4 элемент управления.
@@ -123,13 +123,13 @@ namespace AchivmentsSystem
         protected global::System.Web.UI.WebControls.TextBox TextBox4;
 
         /// <summary>
-        /// Label5 элемент управления.
+        /// RequiredFieldValidator4 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
 
         /// <summary>
         /// TextBox5 элемент управления.
@@ -141,13 +141,13 @@ namespace AchivmentsSystem
         protected global::System.Web.UI.WebControls.TextBox TextBox5;
 
         /// <summary>
-        /// Label6 элемент управления.
+        /// CompareValidator1 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
 
         /// <summary>
         /// TextBox6 элемент управления.
@@ -159,13 +159,13 @@ namespace AchivmentsSystem
         protected global::System.Web.UI.WebControls.TextBox TextBox6;
 
         /// <summary>
-        /// Label7 элемент управления.
+        /// RequiredFieldValidator5 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
 
         /// <summary>
         /// TextBox7 элемент управления.
@@ -177,13 +177,13 @@ namespace AchivmentsSystem
         protected global::System.Web.UI.WebControls.TextBox TextBox7;
 
         /// <summary>
-        /// Label8 элемент управления.
+        /// RequiredFieldValidator6 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label8;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
 
         /// <summary>
         /// TextBox8 элемент управления.
@@ -202,6 +202,15 @@ namespace AchivmentsSystem
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox9;
+
+        /// <summary>
+        /// RegularExpressionValidator1 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
 
         /// <summary>
         /// TextBox10 элемент управления.
