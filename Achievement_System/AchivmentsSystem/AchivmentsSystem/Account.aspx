@@ -17,21 +17,8 @@
         </div>
     <div class="container">
         <div id="ce1" class="cont_elem">
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" HorizontalAlign="Center" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
-                <Columns>
-                    <asp:BoundField DataField="Имя" HeaderText="Имя" SortExpression="Имя" />
-                    <asp:BoundField DataField="Фамилия" HeaderText="Фамилия" SortExpression="Фамилия" />
-                    <asp:BoundField DataField="Отчество" HeaderText="Отчество" SortExpression="Отчество" />
-                    <asp:BoundField DataField="column1" HeaderText="Эл. Почта" SortExpression="column1" />
-                    <asp:BoundField DataField="Телефон" HeaderText="Телефон" SortExpression="Телефон" />
-                </Columns>
-            </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AchievementsConnectionString %>" SelectCommand="SELECT [Имя], [Фамилия], [Отчество], [Эл. Почта] AS column1, [Телефон] FROM [User]"></asp:SqlDataSource>
         </div>
         <div id="ce2" class="cont_elem">
-            <asp:GridView ID="GridView2" runat="server" HorizontalAlign="Center">
-            </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource2" runat="server"></asp:SqlDataSource>
         </div>
     </div>
     </form>

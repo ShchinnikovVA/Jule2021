@@ -63,7 +63,7 @@
                 <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
                 <br />
                 <asp:Button ID="Button3" runat="server" Text="Create!" />
-                &nbsp;<asp:Button ID="Button4" runat="server" Text="Cancel" />
+                &nbsp;<asp:Button ID="Button4" runat="server" Text="Cancel" OnClick="Button4_Click" />
             </asp:Panel>
         </div>
     </form>
