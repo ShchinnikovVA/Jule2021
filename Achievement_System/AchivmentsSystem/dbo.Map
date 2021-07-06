@@ -1,7 +1,0 @@
-﻿CREATE TABLE [dbo].[Map] (
-    [Id]             INT IDENTITY (1, 1) NOT NULL,
-    [Id_User]        INT NOT NULL,
-    [Id_Achievement] INT NULL,
-    PRIMARY KEY CLUSTERED ([Id] ASC)
-);
-

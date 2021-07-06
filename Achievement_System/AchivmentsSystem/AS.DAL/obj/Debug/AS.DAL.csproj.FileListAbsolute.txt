@@ -1,0 +1,9 @@
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.DAL\bin\Debug\AS.DAL.dll
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.DAL\bin\Debug\AS.DAL.pdb
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.DAL\bin\Debug\AS.Entities.dll
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.DAL\bin\Debug\AS.Entities.pdb
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.DAL\obj\Debug\AS.DAL.csprojAssemblyReference.cache
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.DAL\obj\Debug\AS.DAL.csproj.CoreCompileInputs.cache
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.DAL\obj\Debug\AS.DAL.csproj.CopyComplete
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.DAL\obj\Debug\AS.DAL.dll
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.DAL\obj\Debug\AS.DAL.pdb

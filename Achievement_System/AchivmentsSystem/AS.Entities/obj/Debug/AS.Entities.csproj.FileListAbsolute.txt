@@ -1,0 +1,6 @@
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.Entities\bin\Debug\AS.Entities.dll
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.Entities\bin\Debug\AS.Entities.pdb
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.Entities\obj\Debug\AS.Entities.csprojAssemblyReference.cache
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.Entities\obj\Debug\AS.Entities.csproj.CoreCompileInputs.cache
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.Entities\obj\Debug\AS.Entities.dll
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.Entities\obj\Debug\AS.Entities.pdb
