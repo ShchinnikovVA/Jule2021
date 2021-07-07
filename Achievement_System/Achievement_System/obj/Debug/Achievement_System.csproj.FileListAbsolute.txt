@@ -1,7 +1,0 @@
-F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\Achievement_System\bin\Debug\Achievement_System.exe.config
-F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\Achievement_System\bin\Debug\Achievement_System.exe
-F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\Achievement_System\bin\Debug\Achievement_System.pdb
-F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\Achievement_System\obj\Debug\Achievement_System.csprojAssemblyReference.cache
-F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\Achievement_System\obj\Debug\Achievement_System.csproj.CoreCompileInputs.cache
-F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\Achievement_System\obj\Debug\Achievement_System.exe
-F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\Achievement_System\obj\Debug\Achievement_System.pdb
