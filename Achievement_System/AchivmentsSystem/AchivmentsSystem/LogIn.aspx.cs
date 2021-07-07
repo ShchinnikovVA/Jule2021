@@ -37,7 +37,21 @@ namespace AchivmentsSystem
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            Panel1.Visible = false;
+            Panel1.Visible = false; //не работает
+            TextBox3.Text = "";
+            TextBox4.Text = "";
+            TextBox5.Text = "";
+            TextBox6.Text = "";
+            TextBox7.Text = "";
+            TextBox8.Text = "";
+            TextBox9.Text = "";
+            TextBox10.Text = "";
+            
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -78,3 +78,5 @@ F:\Рабочее пространство\Парктика 2021\Jule2021\Achiev
 F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\obj\Debug\AchievementsSystem.PL.csproj.CopyComplete
 F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\obj\Debug\AchivmentsSystem.dll
 F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\obj\Debug\AchivmentsSystem.pdb
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\bin\AS.DAL.dll
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\bin\AS.DAL.pdb
