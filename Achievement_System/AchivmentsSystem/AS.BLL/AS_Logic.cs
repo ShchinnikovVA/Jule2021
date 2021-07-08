@@ -24,13 +24,13 @@ namespace AS.BLL
         {
             _achDAL.AddAchievement(achievement);
         }
-        public void RemoveAchievement(Guid id)
+        public void RemoveAchievement(int id)
         {
             _achDAL.RemoveAchievement(id);
         }
         public void RemoveAchievement(Achievement achievement) => RemoveAchievement(achievement.ID);
 
-        public void EditAchievement(Guid id, string name, string text, string point)
+        public void EditAchievement(int id, string name, string text, string point)
         {
             _achDAL.EditAchievement(id, name, text, Convert.ToInt32(point));
         }
@@ -39,7 +39,7 @@ namespace AS.BLL
         {
             _mapDAL.AddMap(map);
         }
-        public void RemoveMap(Guid id)
+        public void RemoveMap(int id)
         {
             _mapDAL.RemoveMap(id);
         }
@@ -52,7 +52,7 @@ namespace AS.BLL
         {
             _userDAL.AddUser(user);
         }
-        public void RemoveUser(Guid id)
+        public void RemoveUser(int id)
         {
             _userDAL.RemoveUser(id);
         }

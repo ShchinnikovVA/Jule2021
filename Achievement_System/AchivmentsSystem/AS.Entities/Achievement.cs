@@ -10,13 +10,13 @@ namespace AS.Entities
     {
         public Achievement( string name, string text, int points)
         {
-            ID = Guid.NewGuid();
+            //ID = Guid.NewGuid();
             Name = name;
             Text = text;
             Points = points;
         }
 
-        public Guid ID { get; }
+        public int ID { get; }
         public string Name { get; private set; }
         public string Text { get; private set; }
         public int Points { get; private set; }

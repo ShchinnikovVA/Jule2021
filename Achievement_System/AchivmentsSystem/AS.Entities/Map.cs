@@ -8,17 +8,22 @@ namespace AS.Entities
 {
     public class Map
     {
-
-        public Map( Guid iD_User, Guid iD_Achievement)
+        public Map( int iD_User, int iD_Achievement)
         {
-            ID = Guid.NewGuid();
             ID_User = iD_User;
             ID_Achievement = iD_Achievement;
         }
 
-        public Guid ID { get; }
-        public Guid ID_User { get; }
-        public Guid ID_Achievement { get; }
+        //public Map( Guid iD_User, Guid iD_Achievement)
+        //{
+        //    ID = Guid.NewGuid();
+        //    ID_User = iD_User;
+        //    ID_Achievement = iD_Achievement;
+        //}
+
+        public int ID { get; }
+        public int ID_User { get; }
+        public int ID_Achievement { get; }
 
     }
 }

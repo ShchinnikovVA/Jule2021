@@ -13,7 +13,7 @@ namespace AS.DAL
         {
 
         }
-        public void RemoveMap (Guid id)
+        public void RemoveMap (int id)
         {
 
         }

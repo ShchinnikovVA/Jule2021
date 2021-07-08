@@ -13,7 +13,7 @@ namespace AS.DAL
         {
 
         }
-        public void RemoveUser(Guid id)
+        public void RemoveUser(int id)
         {
 
         }
