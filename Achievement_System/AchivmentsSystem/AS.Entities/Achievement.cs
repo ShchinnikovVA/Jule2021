@@ -8,15 +8,17 @@ namespace AS.Entities
 {
     public class Achievement
     {
-        public Achievement( string name, string text)
+        public Achievement( string name, string text, int points)
         {
             ID = Guid.NewGuid();
             Name = name;
             Text = text;
+            Points = points;
         }
 
         public Guid ID { get; }
         public string Name { get; private set; }
         public string Text { get; private set; }
+        public int Points { get; private set; }
     }
 }

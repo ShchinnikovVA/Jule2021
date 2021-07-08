@@ -8,11 +8,6 @@ namespace AS.Entities
 {
     public class Map
     {
-        public Map(Guid iD_User)
-        {
-            ID = Guid.NewGuid();
-            ID_User = iD_User;
-        }
 
         public Map( Guid iD_User, Guid iD_Achievement)
         {
