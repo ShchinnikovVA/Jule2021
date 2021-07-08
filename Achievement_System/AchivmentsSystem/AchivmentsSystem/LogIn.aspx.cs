@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using AS.Entities;
+using AS.BLL;
 
 namespace AchivmentsSystem
 {
@@ -14,7 +16,7 @@ namespace AchivmentsSystem
         SqlConnection userData;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -43,15 +45,17 @@ namespace AchivmentsSystem
             TextBox5.Text = "";
             TextBox6.Text = "";
             TextBox7.Text = "";
-            TextBox8.Text = "";
-            TextBox9.Text = "";
-            TextBox10.Text = "";
+            //TextBox8.Text = "";
+            //TextBox9.Text = "";
+            //TextBox10.Text = "";
             
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-
+            var bll = new AS_Logic();
+            bll.AddUser(new User(TextBox3.Text, TextBox4.Text, TextBox6.Text, TextBox7.Text));
+            //bll.AddMap(new Map(000, 7));
         }
     }
 }

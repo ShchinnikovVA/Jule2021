@@ -52,7 +52,7 @@
                 <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
 &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox7" ErrorMessage="RequiredFieldValidator" ForeColor="Maroon">Поле не может быть пустым!</asp:RequiredFieldValidator>
                 <br />
-                Middle name, if any
+<%--                Middle name, if any
                 <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
                 <br />
                 e-mail address
@@ -61,7 +61,7 @@
                 <br />
                 Phone number&nbsp;
                 <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
-                <br />
+                <br />--%>
                 <asp:Button ID="Button3" runat="server" Text="Create!" OnClick="Button3_Click" />
                 &nbsp;<asp:Button ID="Button4" runat="server" Text="Cancel" OnClick="Button4_Click" />
             </asp:Panel>

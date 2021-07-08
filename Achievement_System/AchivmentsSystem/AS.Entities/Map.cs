@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AS.Entities
 {
-    class Map
+    public class Map
     {
         public Map(Guid iD_User)
         {

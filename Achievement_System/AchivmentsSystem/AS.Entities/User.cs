@@ -6,30 +6,30 @@ using System.Threading.Tasks;
 
 namespace AS.Entities
 {
-    class User
+    public class User
     {
-        public User( Guid iD_Map, string login, string password, string name, string surname)
+        public User(/* Guid iD_Map,*/ string login, string password, string name, string surname)
         {
             ID = Guid.NewGuid();
-            ID_Map = iD_Map;
+            //ID_Map = iD_Map;
             Login = login;
             Password = password;
             Name = name;
             Surname = surname;
         }
 
-        public User( Guid iD_Map, string login, string password, string name, string surname, string middleName, string eMail, int phone_Number)
-        {
-            ID = Guid.NewGuid();
-            ID_Map = iD_Map;
-            Login = login;
-            Password = password;
-            Name = name;
-            Surname = surname;
-            MiddleName = middleName;
-            EMail = eMail;
-            Phone_Number = phone_Number;
-        }
+        //public User( Guid iD_Map, string login, string password, string name, string surname, string middleName, string eMail, int phone_Number)
+        //{
+        //    ID = Guid.NewGuid();
+        //    ID_Map = iD_Map;
+        //    Login = login;
+        //    Password = password;
+        //    Name = name;
+        //    Surname = surname;
+        //    MiddleName = middleName;
+        //    EMail = eMail;
+        //    Phone_Number = phone_Number;
+        //}
 
         public Guid ID { get; }
         public Guid ID_Map { get; }
