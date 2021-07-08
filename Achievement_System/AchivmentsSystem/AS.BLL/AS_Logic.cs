@@ -34,6 +34,10 @@ namespace AS.BLL
         {
             _achDAL.EditAchievement(id, name, text, Convert.ToInt32(point));
         }
+        public void ReaderAchievement()
+        {
+            _achDAL.ReadAchievement();
+        }
         // карта достижений
         public void AddMap(Map map)
         {
@@ -47,6 +51,10 @@ namespace AS.BLL
         {
             _mapDAL.EditMap();
         }
+        public void ReaderMap()
+        {
+            _mapDAL.ReaderMap();
+        }
         // пользователь
         public void AddUser(User user)
         {
@@ -59,6 +67,18 @@ namespace AS.BLL
         public void EditUser()
         {
             _userDAL.EditUser();
+        }
+        public User ReaderUser(int id)
+        {
+            User user = null;
+            user = _userDAL.ReaderUser(id);
+            return user;
+        }
+        public User LoginPassword(string login, string password)
+        {
+            User user = null;
+            user = _userDAL.LoginPassword(login, password);
+            return user;
         }
 
     }

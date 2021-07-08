@@ -8,14 +8,28 @@ namespace AS.Entities
 {
     public class User
     {
-        public User(/*int iD,*/ /*int iD_Map,*/ string login, string password, string name, string surname)
+        public User()
         {
-            //ID = iD;
-            //ID_Map = iD_Map;
+        }
+
+        public User( string login, string password, string name, string surname)
+        {
             Login = login;
             Password = password;
             Name = name;
             Surname = surname;
+        }
+
+        public User(int iD, string login, string password, string name, string surname, string middleName, string eMail, int phone_Number)
+        {
+            ID = iD;
+            Login = login;
+            Password = password;
+            Name = name;
+            Surname = surname;
+            MiddleName = middleName;
+            EMail = eMail;
+            Phone_Number = phone_Number;
         }
 
         //public User(/* Guid iD_Map,*/ string login, string password, string name, string surname)
@@ -41,15 +55,15 @@ namespace AS.Entities
         //    Phone_Number = phone_Number;
         //}
 
-        public int ID { get; }
-        public int ID_Map { get; }
-        public string Login { get; private set; }
-        public string Password { get; private set; }
-        public string Name { get; private set; }
-        public string Surname { get; private set; }
-        public string MiddleName { get; private set; }
-        public string EMail { get; private set; }
-        public int Phone_Number { get; private set; }
+        public int ID { get; set; }
+        //public int ID_Map { get; }
+        public string Login { get;  set; }
+        public string Password { get;  set; }
+        public string Name { get;  set; }
+        public string Surname { get;  set; }
+        public string MiddleName { get;  set; }
+        public string EMail { get;  set; }
+        public int Phone_Number { get;  set; }
 
     }
 }
