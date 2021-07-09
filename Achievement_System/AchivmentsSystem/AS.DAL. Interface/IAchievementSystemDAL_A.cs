@@ -1,9 +1,5 @@
 ﻿using AS.Entities;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AS.DAL.Interface
 {
@@ -12,6 +8,6 @@ namespace AS.DAL.Interface
         void AddAchievement(Achievement achievement);
         void RemoveAchievement(int id);
         void EditAchievement(int id, string name, string text, int points);
-        Achievement ReadAchievement(int user_id);
+        List<Achievement> ReadAchievement(int user_id);
     }
 }

@@ -1,14 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Data;
-using System.Data.SqlClient;
 using AS.Entities;
-using AS.BLL;
-using AS.BLL.Interface;
 using AS.Dependencies;
 
 namespace AchivmentsSystem
@@ -17,7 +9,6 @@ namespace AchivmentsSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -62,7 +53,6 @@ namespace AchivmentsSystem
         protected void Button3_Click(object sender, EventArgs e)
         {
             DependencyResolver.Instance.BLL_Logic.AddUser(new User(TextBox3.Text, TextBox4.Text, TextBox6.Text, TextBox7.Text));
-            //bll.AddMap(new Map(000, 1));
         }
     }
 }

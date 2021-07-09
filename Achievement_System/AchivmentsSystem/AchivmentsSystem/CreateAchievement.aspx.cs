@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using AS.Entities;
-using AS.BLL;
-using AS.BLL.Interface;
 using AS.Dependencies;
 
 namespace AchivmentsSystem

@@ -1,10 +1,6 @@
 ﻿using AS.Entities;
-using AS.DAL;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AS.DAL.Interface;
 using AS.BLL.Interface;
 
@@ -36,9 +32,9 @@ namespace AS.BLL
         {
             _achDAL.EditAchievement(id, name, text, Convert.ToInt32(point));
         }
-        public Achievement ReaderAchievement(int user_id)
+        public List<Achievement> ReadAchievement(int user_id)
         {
-            Achievement achievement = null;
+            List<Achievement> achievement = new List<Achievement>();
             achievement = _achDAL.ReadAchievement(user_id);
             return achievement;
         }
@@ -51,7 +47,6 @@ namespace AS.BLL
         {
             _mapDAL.RemoveMap(id);
         }
-     
         // пользователь
         public void AddUser(User user)
         {

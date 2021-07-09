@@ -1,14 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Data;
-using System.Data.SqlClient;
-using AS.BLL;
 using AS.Entities;
-using AS.BLL.Interface;
 using AS.Dependencies;
 
 namespace AchivmentsSystem
@@ -18,14 +10,12 @@ namespace AchivmentsSystem
         int list_id = 1;
         string ID_USER;
         User this_user = null;
-        Achievement achievements = null;
-        //HttpCookie this_id = new HttpCookie("This_ID");
+        List<Achievement> achievements = new List<Achievement>();
         protected void Page_Load(object sender, EventArgs e)
         {
             ID_USER = Application["This_User"].ToString();
             this_user = DependencyResolver.Instance.BLL_Logic.ReaderUser(Convert.ToInt32(ID_USER));
-            achievements = DependencyResolver.Instance.BLL_Logic.ReaderAchievement(this_user.ID);
-            //this_id.Value =this_user.ID.ToString();
+            achievements =DependencyResolver.Instance.BLL_Logic.ReadAchievement(this_user.ID);
             SetNameText();
             GetAchievement();
         }
@@ -46,13 +36,11 @@ namespace AchivmentsSystem
         }
         public void GetAchievement()
         {
-            //achievements = DependencyResolver.Instance.BLL_Logic.ReaderAchievement(this_user.ID);
-            /*if(achievements != null)*/
-            ListBox1.Items.Insert(list_id, achievements.Name);
-            //Label1.Text = achievements.Name;
-            /*else*/
-            ListBox1.Items.Insert(list_id+1, "help");
-            list_id++;
+            for(int i = 1; i < achievements.Count ; i++)
+            {
+                ListBox1.Items.Insert(list_id, achievements[i].Name + " " + achievements[i].Text + " " + achievements[i].Points.ToString());
+                list_id++;
+            }
         }
 
         protected void Button3_Click(object sender, EventArgs e)
@@ -102,10 +90,8 @@ namespace AchivmentsSystem
         {
             Panel2.Visible = false;
         }
-
         protected void Button6_Click(object sender, EventArgs e)
         {
-            
             DependencyResolver.Instance.BLL_Logic.RemoveUser(this_user.ID);
             Response.Redirect("Login.aspx");
         }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AS.Entities;
+﻿using AS.Entities;
 using System.Data;
 using System.Data.SqlClient;
 using AS.DAL.Interface;
@@ -13,7 +8,6 @@ namespace AS.DAL
     public class MapDAL : IAchievementSystemDAL_M
     {
         public const string _FILES_PATCH = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\Files\AchievementSystem.mdf;Integrated Security=True;Connect Timeout=30";
-
         public void AddMap(Map map)
         {
             using (SqlConnection connection = new SqlConnection(_FILES_PATCH))

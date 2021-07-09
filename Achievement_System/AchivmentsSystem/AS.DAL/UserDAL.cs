@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AS.Entities;
+﻿using AS.Entities;
 using System.Data;
 using System.Data.SqlClient;
 using AS.DAL.Interface;
@@ -25,14 +20,17 @@ namespace AS.DAL
                 command.Parameters.Add("@Password", SqlDbType.NVarChar, 50);
                 command.Parameters.Add("@Name", SqlDbType.NVarChar, 50);
                 command.Parameters.Add("@Surname", SqlDbType.NVarChar, 50);
+
                 string login = user.Login;
                 string password = user.Password;
                 string name = user.Name;
                 string surname = user.Surname;
+
                 command.Parameters["@Login"].Value = login;
                 command.Parameters["@Password"].Value = password;
                 command.Parameters["@Name"].Value = name;
                 command.Parameters["@Surname"].Value = surname;
+
                 command.ExecuteNonQuery();
             }
         }
@@ -65,6 +63,7 @@ namespace AS.DAL
                 command.Parameters.Add("@Middlename", SqlDbType.NVarChar, 50);
                 command.Parameters.Add("@Email", SqlDbType.NVarChar, 50);
                 command.Parameters.Add("@Number", SqlDbType.Int);
+
                 command.Parameters["@Login"].Value = login;
                 command.Parameters["@Password"].Value = password;
                 command.Parameters["@Name"].Value = name;
@@ -72,6 +71,7 @@ namespace AS.DAL
                 command.Parameters["@Middlename"].Value = middlename;
                 command.Parameters["@Email"].Value = email;
                 command.Parameters["@Number"].Value = number;
+
                 command.ExecuteNonQuery();
             }
         }

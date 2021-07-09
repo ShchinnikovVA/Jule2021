@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AS.Entities
+﻿namespace AS.Entities
 {
     public class Achievement
     {
@@ -14,7 +8,6 @@ namespace AS.Entities
 
         public Achievement( string name, string text, int points)
         {
-            //ID = Guid.NewGuid();
             Name = name;
             Text = text;
             Points = points;
