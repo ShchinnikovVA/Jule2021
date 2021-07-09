@@ -13,5 +13,6 @@ namespace AS.DAL.Interface
         void RemoveUser(int id);
         void EditUser();
         User LoginPassword(string login, string password);
+        User ReaderUser(int id);
     }
 }

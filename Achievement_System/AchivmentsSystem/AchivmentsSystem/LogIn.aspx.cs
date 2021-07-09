@@ -8,12 +8,13 @@ using System.Data;
 using System.Data.SqlClient;
 using AS.Entities;
 using AS.BLL;
+using AS.BLL.Interface;
+using AS.Dependencies;
 
 namespace AchivmentsSystem
 {
     public partial class LogIn : System.Web.UI.Page
     {
-        SqlConnection userData;
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -29,9 +30,8 @@ namespace AchivmentsSystem
             if(TextBox1.Text != null)
             {
                 if (TextBox2.Text != null)
-                {   
-                    var bll = new AS_Logic();
-                    var userData = bll.LoginPassword(TextBox1.Text, TextBox2.Text);
+                {
+                    var userData = DependencyResolver.Instance.BLL_Logic.LoginPassword(TextBox1.Text, TextBox2.Text);
                     Dictionary<string, string> list = new Dictionary<string, string>();
                     list.Add(userData.Login, userData.Password);
                     if (list.ContainsKey(TextBox1.Text))
@@ -51,22 +51,17 @@ namespace AchivmentsSystem
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            Panel1.Visible = false; //не работает
+            Panel1.Visible = false;
             TextBox3.Text = "";
             TextBox4.Text = "";
             TextBox5.Text = "";
             TextBox6.Text = "";
             TextBox7.Text = "";
-            //TextBox8.Text = "";
-            //TextBox9.Text = "";
-            //TextBox10.Text = "";
-            
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-            var bll = new AS_Logic();
-            bll.AddUser(new User(TextBox3.Text, TextBox4.Text, TextBox6.Text, TextBox7.Text));
+            DependencyResolver.Instance.BLL_Logic.AddUser(new User(TextBox3.Text, TextBox4.Text, TextBox6.Text, TextBox7.Text));
             //bll.AddMap(new Map(000, 1));
         }
     }

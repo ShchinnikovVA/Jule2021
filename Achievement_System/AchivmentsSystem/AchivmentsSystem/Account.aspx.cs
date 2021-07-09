@@ -8,6 +8,8 @@ using System.Data;
 using System.Data.SqlClient;
 using AS.BLL;
 using AS.Entities;
+using AS.BLL.Interface;
+using AS.Dependencies;
 
 namespace AchivmentsSystem
 {
@@ -18,8 +20,7 @@ namespace AchivmentsSystem
         protected void Page_Load(object sender, EventArgs e)
         {
             ID_USER = Application["This User"].ToString();
-            var bll = new AS_Logic();
-            this_user = bll.ReaderUser(Convert.ToInt32(ID_USER));
+            DependencyResolver.Instance.BLL_Logic.ReaderUser(Convert.ToInt32(ID_USER));
             Label1.Text = this_user.Name;
         }
 

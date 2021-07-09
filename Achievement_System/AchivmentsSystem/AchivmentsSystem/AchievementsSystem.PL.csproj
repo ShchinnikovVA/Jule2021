@@ -253,6 +253,10 @@
       <Project>{da656124-cac3-4304-baaa-93dec893b4d4}</Project>
       <Name>AS.BLL.Interface</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AS.Dependencies\AS.Dependencies.csproj">
+      <Project>{8a36ea28-5a4c-4527-8997-e2cd22ccdd77}</Project>
+      <Name>AS.Dependencies</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AS.Entities\AS.Entities.csproj">
       <Project>{dfcf1f73-75b5-4af9-a4e0-aa925c6dc582}</Project>
       <Name>AS.Entities</Name>

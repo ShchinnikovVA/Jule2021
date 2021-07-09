@@ -15,11 +15,11 @@ namespace AS.BLL
         private IAchievementSystemDAL_A _achDAL;
         private IAchievementSystemDAL_M _mapDAL;
         private IAchievementSystemDAL_U _userDAL;
-        public AS_Logic()
+        public AS_Logic(IAchievementSystemDAL_A DAL_A, IAchievementSystemDAL_M DAL_M, IAchievementSystemDAL_U DAL_U)
         {
-            _achDAL = new AchDAL();
-            _mapDAL = new MapDAL();
-            _userDAL = new UserDAL();
+            _achDAL = DAL_A;
+            _mapDAL = DAL_M;
+            _userDAL = DAL_U;
         }
         // достижения
         public void AddAchievement(Achievement achievement)

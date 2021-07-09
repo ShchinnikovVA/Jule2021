@@ -80,3 +80,9 @@ F:\Рабочее пространство\Парктика 2021\Jule2021\Achiev
 F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\obj\Debug\AchivmentsSystem.pdb
 F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\bin\AS.DAL.dll
 F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\bin\AS.DAL.pdb
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\bin\AS.BLL.Interface.dll
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\bin\AS.Dependencies.dll
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\bin\AS.DAL.Interface.dll
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\bin\AS.BLL.Interface.pdb
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\bin\AS.Dependencies.pdb
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AchivmentsSystem\bin\AS.DAL.Interface.pdb
