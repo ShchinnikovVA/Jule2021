@@ -37,7 +37,7 @@ namespace AchivmentsSystem
                     if (list.ContainsKey(TextBox1.Text))
                         if (list[TextBox1.Text] == TextBox2.Text)
                         {
-                            Application["This User"] = userData.ID.ToString();
+                            Application["This_User"] = userData.ID.ToString();
                             Response.Redirect("Account.aspx");
                         }
                         else

@@ -25,17 +25,14 @@ namespace AS.DAL
                 command.Parameters.Add("@Password", SqlDbType.NVarChar, 50);
                 command.Parameters.Add("@Name", SqlDbType.NVarChar, 50);
                 command.Parameters.Add("@Surname", SqlDbType.NVarChar, 50);
-
                 string login = user.Login;
                 string password = user.Password;
                 string name = user.Name;
                 string surname = user.Surname;
-
                 command.Parameters["@Login"].Value = login;
                 command.Parameters["@Password"].Value = password;
                 command.Parameters["@Name"].Value = name;
                 command.Parameters["@Surname"].Value = surname;
-
                 command.ExecuteNonQuery();
             }
         }
@@ -49,16 +46,16 @@ namespace AS.DAL
                 command.CommandText = @"DELETE FROM [dbo].[User] WHERE Id = @Id";
                 command.Parameters.Add("@Id", SqlDbType.Int);
                 command.Parameters["@Id"].Value = id;
-
                 command.ExecuteNonQuery();
             }
         }
-        public void EditUser()
+        public void EditUser(int id, string login, string password, string name, string surname, string middlename, string email, int number)
         {
             using (SqlConnection connection = new SqlConnection(_FILES_PATCH))
             {
                 connection.Open();
                 SqlCommand command = new SqlCommand();
+                command.Parameters.Add(new SqlParameter("@Id", id));
                 command.Connection = connection;
                 command.CommandText = @"UPDATE [dbo].[User] SET Login = @Login, Password = @Password, Name = @Name, Surname = @Surname, Middlename = @Middlename, Email = @Email, Number = @Number WHERE Id = @Id";
                 command.Parameters.Add("@Login", SqlDbType.NVarChar, 50);
@@ -67,7 +64,15 @@ namespace AS.DAL
                 command.Parameters.Add("@Surname", SqlDbType.NVarChar, 50);
                 command.Parameters.Add("@Middlename", SqlDbType.NVarChar, 50);
                 command.Parameters.Add("@Email", SqlDbType.NVarChar, 50);
-                command.Parameters.Add("@Email", SqlDbType.NVarChar, 50);
+                command.Parameters.Add("@Number", SqlDbType.Int);
+                command.Parameters["@Login"].Value = login;
+                command.Parameters["@Password"].Value = password;
+                command.Parameters["@Name"].Value = name;
+                command.Parameters["@Surname"].Value = surname;
+                command.Parameters["@Middlename"].Value = middlename;
+                command.Parameters["@Email"].Value = email;
+                command.Parameters["@Number"].Value = number;
+                command.ExecuteNonQuery();
             }
         }
         public User LoginPassword (string login, string password)
@@ -77,10 +82,6 @@ namespace AS.DAL
             using (SqlCommand command = new SqlCommand("select * from [dbo].[User] where ( Login = @Login and Password = @Password)", connection))
             {
                 connection.Open();
-                
-                
-                //command.Parameters["@Login"].Value = password;
-                //    command.Parameters["@Password"].Value = password;
                 command.Parameters.Add(new SqlParameter("@Login", login));
                 command.Parameters.Add(new SqlParameter("@Password", password));
                 using (SqlDataReader reader = command.ExecuteReader())
@@ -93,12 +94,6 @@ namespace AS.DAL
                         user.Password = reader.GetString(2);
                         user.Name = reader.GetString(3);
                         user.Surname = reader.GetString(4);
-                        //user.MiddleName = reader.GetString(5);
-                        //user.EMail = reader.GetString(6);
-                        //user.Phone_Number = reader.GetInt32(7);
-
-
-
                     }
                     return user;
                 }
@@ -126,11 +121,6 @@ namespace AS.DAL
                         user.MiddleName = reader.IsDBNull(5) ? "" : reader.GetString(5);
                         user.EMail = reader.IsDBNull(6) ? "" : reader.GetString(6);
                         user.Phone_Number = reader.IsDBNull(7) ? 0 : reader.GetInt32(7);
-                        //user.EMail = reader.GetString(6);
-                        //user.Phone_Number = reader.GetInt32(7);
-
-
-
                     }
                     return user;
                 }

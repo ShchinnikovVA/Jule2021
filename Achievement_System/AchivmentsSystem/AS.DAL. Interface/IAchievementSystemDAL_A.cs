@@ -12,6 +12,6 @@ namespace AS.DAL.Interface
         void AddAchievement(Achievement achievement);
         void RemoveAchievement(int id);
         void EditAchievement(int id, string name, string text, int points);
-        void ReadAchievement();
+        Achievement ReadAchievement(int user_id);
     }
 }

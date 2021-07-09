@@ -26,21 +26,55 @@
             <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
             <br />
             <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
+            <br />
+            <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Редактировать" />
         </div>
         <div id="ce2" class="cont_elem">
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
-                <Columns>
-                    <asp:BoundField DataField="Id_user" HeaderText="Id_user" SortExpression="Id_user" />
-                    <asp:BoundField DataField="Id_achievement" HeaderText="Id_achievement" SortExpression="Id_achievement" />
-                </Columns>
-            </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AchievementSystemConnectionString %>" SelectCommand="SELECT [Id_user], [Id_achievement] FROM [Map] WHERE ([Id_achievement] = @Id_achievement)">
-                <SelectParameters>
-                    <asp:CookieParameter CookieName="This User" Name="Id_achievement" Type="Int32" />
-                </SelectParameters>
-            </asp:SqlDataSource>
+            <asp:ListBox ID="ListBox1" runat="server" Height="206px" Width="481px">
+                <asp:ListItem></asp:ListItem>
+                <asp:ListItem></asp:ListItem>
+                <asp:ListItem></asp:ListItem>
+            </asp:ListBox>
+            <br />
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Добавить награду" />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Удалить профиль" />
+            <asp:Panel ID="Panel2" runat="server" Visible="False">
+                Вы уверены?<br />
+                <asp:Button ID="Button6" runat="server" OnClick="Button6_Click" Text="Да" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button7" runat="server" OnClick="Button7_Click" Text="Нет" />
+            </asp:Panel>
         </div>
+        <asp:Panel ID="Panel1" runat="server" Height="275px" Visible="False" Width="488px">
+            Редактировать профиль:<br /> Логин:
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <br />
+            Пароль:
+            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <br />
+            Имя:
+            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            <br />
+            Фаммилия:
+            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+            <br />
+            Отчество:
+            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            <br />
+            Почта:
+            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+            <br />
+            Номер телефона:
+            <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+            <br />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Сохранить" />
+            <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Отмена" />
+        </asp:Panel>
     </div>
     </form>
     </body>

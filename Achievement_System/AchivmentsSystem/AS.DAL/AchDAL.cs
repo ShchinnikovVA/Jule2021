@@ -85,34 +85,31 @@ namespace AS.DAL
                 //    }
             }
         }
-        public void ReadAchievement()
+        public Achievement ReadAchievement(int user_id)
         {
-            //using (SqlConnection connection = new SqlConnection(_FILES_PATCH))
-            //{
-            //    connection.Open();
-            //    string sql = "SELECT * FROM Achievement";
-            //    List<Achievement> ach = new List<Achievement>();
-            //    SqlCommand command = new SqlCommand(sql, connection);
-            //    SqlDataReader reader = command.ExecuteReader();
-
-            //    while (reader.Read())
-            //    {
-            //        int id = reader.GetInt32(0);
-            //        string name = reader.GetString(1);
-            //        string text = reader.GetString(2); 
-            //        int point = reader.GetInt32(3);
-
-            //        Achievement a = new Achievement(id, name, text, point);
-            //        ach.Add(a);
-            //    }
-                //if (ach.Count > 0)
-                //{
-                //    using (System.IO.FileStream fs = new System.IO.FileStream(ach[0].Name, FileMode.OpenOrCreate))
-                //    {
-                //        //fs.Write(ach[0].Data, 0, ach[0].Data.Length);
-                //    }
-                //}
-            //}
+            Achievement achievement = null;
+            using (SqlConnection connection = new SqlConnection(_FILES_PATCH))
+            using (SqlCommand command = new SqlCommand(@"SELECT Achievement.Name, Achievement.Text, Achievement.Points FROM Achievement INNER JOIN Map ON Achievement.Id = Map.Id_achievement INNER JOIN[User] ON Map.Id_user = [User].Id WHERE [User].Id = @Id", connection))
+            {
+                {
+                    connection.Open();
+                    command.Connection = connection;
+                    command.Parameters.Add(new SqlParameter("@Id", user_id));
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            achievement = new Achievement();
+                            achievement.ID = reader.GetInt32(0);
+                            achievement.Name = reader.GetString(1);
+                            achievement.Text = reader.GetString(2);
+                            achievement.Points = reader.GetInt32(3);
+                        }
+                        //reader.Close();
+                    }
+                }
+                return achievement;
+            }
         }
     }
 }
