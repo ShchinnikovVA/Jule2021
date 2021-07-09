@@ -5,14 +5,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AS.DAL.Interface;
+using AS.BLL.Interface;
 
 namespace AS.BLL
 {
-    public class AS_Logic
+    public class AS_Logic : IAchievementSystemBLL
     {
-        private AchDAL _achDAL;
-        private MapDAL _mapDAL;
-        private UserDAL _userDAL;
+        private IAchievementSystemDAL_A _achDAL;
+        private IAchievementSystemDAL_M _mapDAL;
+        private IAchievementSystemDAL_U _userDAL;
         public AS_Logic()
         {
             _achDAL = new AchDAL();
@@ -47,14 +49,7 @@ namespace AS.BLL
         {
             _mapDAL.RemoveMap(id);
         }
-        public void EditMap()
-        {
-            _mapDAL.EditMap();
-        }
-        public void ReaderMap()
-        {
-            _mapDAL.ReaderMap();
-        }
+     
         // пользователь
         public void AddUser(User user)
         {

@@ -23,5 +23,9 @@ namespace AchivmentsSystem
             Label1.Text = this_user.Name;
         }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CreateAchievement.aspx");
+        }
     }
 }

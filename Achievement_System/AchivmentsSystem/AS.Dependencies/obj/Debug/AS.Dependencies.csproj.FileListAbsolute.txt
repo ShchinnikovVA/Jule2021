@@ -1,0 +1,2 @@
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.Dependencies\obj\Debug\AS.Dependencies.csprojAssemblyReference.cache
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.Dependencies\obj\Debug\AS.Dependencies.csproj.CoreCompileInputs.cache

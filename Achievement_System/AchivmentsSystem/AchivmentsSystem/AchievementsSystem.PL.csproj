@@ -249,9 +249,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AS.BLL\AS.BLL.csproj">
-      <Project>{315c4806-017b-4f7a-9ae5-45daa295531f}</Project>
-      <Name>AS.BLL</Name>
+    <ProjectReference Include="..\AS.BLL.Interface\AS.BLL.Interface.csproj">
+      <Project>{da656124-cac3-4304-baaa-93dec893b4d4}</Project>
+      <Name>AS.BLL.Interface</Name>
     </ProjectReference>
     <ProjectReference Include="..\AS.Entities\AS.Entities.csproj">
       <Project>{dfcf1f73-75b5-4af9-a4e0-aa925c6dc582}</Project>

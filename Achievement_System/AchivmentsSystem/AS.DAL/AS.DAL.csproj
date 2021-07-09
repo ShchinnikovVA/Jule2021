@@ -47,6 +47,10 @@
     <Compile Include="UserDAL.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AS.DAL. Interface\AS.DAL. Interface.csproj">
+      <Project>{ebe0cdd9-da36-457d-a9e9-376b772c69a5}</Project>
+      <Name>AS.DAL. Interface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AS.Entities\AS.Entities.csproj">
       <Project>{dfcf1f73-75b5-4af9-a4e0-aa925c6dc582}</Project>
       <Name>AS.Entities</Name>

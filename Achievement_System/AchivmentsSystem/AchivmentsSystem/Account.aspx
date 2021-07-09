@@ -39,6 +39,7 @@
                     <asp:CookieParameter CookieName="This User" Name="Id_achievement" Type="Int32" />
                 </SelectParameters>
             </asp:SqlDataSource>
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Добавить награду" />
         </div>
     </div>
     </form>

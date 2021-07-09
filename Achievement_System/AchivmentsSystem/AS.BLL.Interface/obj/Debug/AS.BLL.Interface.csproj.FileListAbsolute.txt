@@ -1,0 +1,9 @@
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.BLL.Interface\bin\Debug\AS.BLL.Interface.dll
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.BLL.Interface\bin\Debug\AS.BLL.Interface.pdb
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.BLL.Interface\bin\Debug\AS.Entities.dll
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.BLL.Interface\bin\Debug\AS.Entities.pdb
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.BLL.Interface\obj\Debug\AS.BLL.Interface.csprojAssemblyReference.cache
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.BLL.Interface\obj\Debug\AS.BLL.Interface.csproj.CoreCompileInputs.cache
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.BLL.Interface\obj\Debug\AS.BLL.Interface.csproj.CopyComplete
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.BLL.Interface\obj\Debug\AS.BLL.Interface.dll
+F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\AS.BLL.Interface\obj\Debug\AS.BLL.Interface.pdb

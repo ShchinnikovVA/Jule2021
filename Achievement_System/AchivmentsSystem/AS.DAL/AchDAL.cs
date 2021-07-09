@@ -6,10 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using AS.DAL.Interface;
 
 namespace AS.DAL
 {
-    public class AchDAL
+    public class AchDAL : IAchievementSystemDAL_A
     {
         public const string _FILES_PATCH = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Рабочее пространство\Парктика 2021\Jule2021\Achievement_System\AchivmentsSystem\Files\AchievementSystem.mdf;Integrated Security=True;Connect Timeout=30";
         
