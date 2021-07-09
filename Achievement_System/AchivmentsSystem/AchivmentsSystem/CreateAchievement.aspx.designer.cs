@@ -51,6 +51,24 @@ namespace AchivmentsSystem
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
+        /// TextBox9 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox9;
+
+        /// <summary>
+        /// Button8 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button8;
+
+        /// <summary>
         /// TextBox1 элемент управления.
         /// </summary>
         /// <remarks>

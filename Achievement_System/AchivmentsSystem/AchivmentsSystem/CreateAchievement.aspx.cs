@@ -6,9 +6,10 @@ namespace AchivmentsSystem
 {
     public partial class CreateAchievement : System.Web.UI.Page
     {
+        string ID_USER;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ID_USER = Application["This_User"].ToString();
         }
 
         protected void Button1_Click(object sender, EventArgs e) // Добавить
@@ -50,6 +51,11 @@ namespace AchivmentsSystem
         protected void Button2_Click(object sender, EventArgs e) // удалить
         {
             DependencyResolver.Instance.BLL_Logic.RemoveAchievement(Convert.ToInt32(TextBox8.Text));
+        }
+
+        protected void Button8_Click(object sender, EventArgs e)
+        {
+            DependencyResolver.Instance.BLL_Logic.AddMap(new Map(Convert.ToInt32(ID_USER), Convert.ToInt32(TextBox9.Text)));
         }
     }
 }

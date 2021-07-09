@@ -25,8 +25,10 @@ Id INT PRIMARY KEY IDENTITY,
 create table [Map]
 (
 Id INT PRIMARY KEY IDENTITY,
-Id_user INT NOT NULL,CONSTRAINT FK_Map_User FOREIGN KEY (Id_user)
-        REFERENCES [dbo].[User] (Id),
-Id_achievement INT NOT NULL,CONSTRAINT FK_Map_Achievement FOREIGN KEY (Id_achievement)
-        REFERENCES [dbo].[Map] (Id)
+Id_user INT NOT NULL,
+--CONSTRAINT FK_Map_User FOREIGN KEY (Id_user)
+--        REFERENCES [dbo].[User] (Id),
+Id_achievement INT NOT NULL,
+--CONSTRAINT FK_Map_Achievement FOREIGN KEY (Id_achievement)
+--        REFERENCES [dbo].[Map] (Id)
 )

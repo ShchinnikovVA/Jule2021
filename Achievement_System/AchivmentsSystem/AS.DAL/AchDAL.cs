@@ -83,7 +83,7 @@ namespace AS.DAL
                         while (reader.Read())
                         {
                             var achievement = new Achievement();
-                            achievement.ID = reader.GetInt32(0);
+                            //achievement.ID = reader.GetInt32(0);
                             achievement.Name = reader.GetString(1);
                             achievement.Text = reader.GetString(2);
                             achievement.Points = reader.GetInt32(3);

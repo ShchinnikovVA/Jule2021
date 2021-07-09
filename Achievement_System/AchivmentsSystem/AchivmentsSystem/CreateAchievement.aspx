@@ -21,6 +21,10 @@
                 </Columns>
             </asp:GridView>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AchievementSystemConnectionString %>" SelectCommand="SELECT * FROM [Achievement]"></asp:SqlDataSource>
+            &nbsp;Дочтижение №
+            <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+&nbsp;<asp:Button ID="Button8" runat="server" OnClick="Button8_Click" Text="Получить" />
+            <br />
             <br />
             Создать достижение:<br />
             Название:
